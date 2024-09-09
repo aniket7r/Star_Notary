@@ -1,7 +1,5 @@
 # Decentralized Star Notary
 
-
-
 1) ERC-721 Token Name: `Star Token`
 2) ERC-721 Token Symbol: `STK`
 3) Version of the Truffle and OpenZeppelin used: `Truffle v5.1.44 (core: 5.1.44)` | `OpenZeppelin version 2.1.2`
