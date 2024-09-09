@@ -1,23 +1,23 @@
 # Decentralized Star Notary
-<img src="../assets/undraw/project2.svg" width="200"/>
 
-## Submission Information
-1) Your ERC-721 Token Name: `Star Token`
-2) Your ERC-721 Token Symbol: `STK`
+
+
+1) ERC-721 Token Name: `Star Token`
+2) ERC-721 Token Symbol: `STK`
 3) Version of the Truffle and OpenZeppelin used: `Truffle v5.1.44 (core: 5.1.44)` | `OpenZeppelin version 2.1.2`
 4) The deployed smart contract address on rinkeby test network: `0x1209562a12bB99fE01BFb0154C2A588Ed078aA3a`
 
 ## Summary
-The purpose of this project is to develop familiarity with building a decentralized app (dApp) on Ethereum.  In the course, we created `v1` of the Star Notary app which used the `ERC721` interface to declare a non-fungible token.  Previously, we added functions in our `StarNotary.sol` contract to (i) create a star, (ii) put a star up for sale, and (iii) buy a star.
+The purpose of this project is to develop familiarity with building a decentralized app (dApp) on Ethereum. Earlier in the `v1` of the Star Notary app which used the `ERC721` interface to declare a non-fungible token.  Previously, added functions in `StarNotary.sol` contract to (i) create a star, (ii) put a star up for sale, and (iii) buy a star.
 
-In this project, we extended the functionality of the dApp by adding a name and symbol to our token and adding additional functionality including:
+In this project, extended the functionality of the dApp by adding a name and symbol to our token and adding additional functionality including:
 
 - looking up the given name of a star given its token id
 - exchanging two stars between two owners
 - transfering a star from one user to another user
 
 ## Testing The dApp
-We added unit tests in `test/TestStarNotary.js` to test the added functionality.  The testing framework we used is called `chai`, which allows us to write simple assertions for smart contracts.  To run the tests in truffle, simply run `truffle test` from the root directory (i.e. location of the `truffle-config.js` file).  The test output from our suite of tests is pasted below:
+Added unit tests in `test/TestStarNotary.js` to test the added functionality.  The testing framework used is called `chai`, which allows us to write simple assertions for smart contracts.  To run the tests in truffle, simply run `truffle test` from the root directory (i.e. location of the `truffle-config.js` file).  The test output from our suite of tests is pasted below:
 
 ```
 galen$ truffle test
@@ -47,7 +47,7 @@ Compiling your contracts...
 ```
 
 ###  Deploying to Rinkeby
-On the Rinkeby test network, you can get free test coins from a faucet and run smart contracts on a test instance of the Ethereum network without incurring any costs.  Truffle makes deploying (i.e. migrating) our tested contracts straightforward.  The first step to prepare the migration is to edit the `networks` section of the `truffle-config.js` file.  We used a configuration provided by infura for our `HDWalletProvider`.  Infura provides blockchain infrastructure to connect to Ethereum nodes (in this case, nodes connected to the Rinkeby test network).  This configuration requires a wallet with an Ethereum balance (test coins), which we provided as follows:
+On the Rinkeby test network, you can get free test coins from a faucet and run smart contracts on a test instance of the Ethereum network without incurring any costs.  Truffle makes deploying (i.e. migrating) tested contracts straightforward.  The first step to prepare the migration is to edit the `networks` section of the `truffle-config.js` file. I used a configuration provided by infura for `HDWalletProvider`.  Infura provides blockchain infrastructure to connect to Ethereum nodes (in this case, nodes connected to the Rinkeby test network).  This configuration requires a wallet with an Ethereum balance (test coins), which we provided as follows:
 ```javascript
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = "1f959ba5e1fc4d839375c97d5e27ffef";
